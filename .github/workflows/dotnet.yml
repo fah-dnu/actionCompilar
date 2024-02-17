@@ -38,5 +38,5 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1.0.2
     - name: Build with MSBuild
-      run: msbuild YourSolution.sln /p:Configuration=Release /p:TargetFrameworkVersion=v4.8    
+      run: msbuild compilacion_actions.sln /p:Configuration=Release /p:TargetFrameworkVersion=v4.8    
   
