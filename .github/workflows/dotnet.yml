@@ -35,5 +35,8 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.1.301' # Ejemplo para SDK de .NET Core, ajustar según sea necesario
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.0.2
     - name: Build with MSBuild
-      run: msbuild YourSolution.sln /p:Configuration=Release /p:TargetFrameworkVersion=v4.8
+      run: msbuild YourSolution.sln /p:Configuration=Release /p:TargetFrameworkVersion=v4.8    
+  
